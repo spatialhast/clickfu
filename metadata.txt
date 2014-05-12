@@ -1,21 +1,20 @@
 [general]
-name=ClickFu
+name=Click-Fu
+about=Originally written by Barry Rowlingson, ported to QGIS 2.0 by Maxim Dubinin (NextGIS).
 description=Send click coordinates to various geoservices.
 category=Vector
-version=0.4
+version=0.4.3
 qgisMinimumVersion=2.0
 
 author=NextGIS
 authorName=Barry Rowlingson
 email=info@nextgis.org
 
-icon=icons/icon.png
-
 tags=click
 
-homepage=https://github.com/nextgis/clickfu
-tracker=https://github.com/nextgis/clickfu/issues
-repository=https://github.com/nextgis/clickfu
+homepage=https://github.com/nextgis/click-fu
+tracker=https://github.com/nextgis/click-fu/issues
+repository=https://github.com/nextgis/click-fu
 
 experimental=True
 deprecated=False
