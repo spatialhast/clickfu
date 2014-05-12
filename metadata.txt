@@ -1,0 +1,21 @@
+[general]
+name=ClickFu
+description=Send click coordinates to various geoservices.
+category=Vector
+version=0.4
+qgisMinimumVersion=2.0
+
+author=NextGIS
+authorName=Barry Rowlingson
+email=info@nextgis.org
+
+icon=icons/icon.png
+
+tags=click
+
+homepage=https://github.com/nextgis/clickfu
+tracker=https://github.com/nextgis/clickfu/issues
+repository=https://github.com/nextgis/clickfu
+
+experimental=True
+deprecated=False

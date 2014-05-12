@@ -1,0 +1,15 @@
+
+from clickFuUtils import cfAction
+
+class googleMap(cfAction):
+    def __init__(self,iface):
+        cfAction.__init__(self,self.name(),iface)
+        return None
+    def name(self):
+        return "Google Maps"
+    def desc(self):
+        return "Goto Location on Google Maps"
+
+    def createURL(self,lat,long):
+        url = "http://maps.google.com/maps?ll=%s,%s&z=14" % (lat,long)
+        return url
