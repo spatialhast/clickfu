@@ -11,7 +11,7 @@ class geoHack(cfAction):
         return "Wikimedia ToolServer's GeoHack"
 
     def createURL(self,lat,long):
-        url = "http://stable.toolserver.org/geohack/geohack.php?params=%s_%s_%s_%s_%s_%s_%s_%s"
+        url = "http://tools.wmflabs.org/geohack/geohack.php?params=%s_%s_%s_%s_%s_%s_%s_%s"
         latV = convertLat(lat)
         lonV = convertLon(long)
         url = url % (latV[0],latV[1],latV[2],latV[3],lonV[0],lonV[1],lonV[2],lonV[3])
