@@ -12,7 +12,7 @@ class osmViewMap(cfAction):
         return "Goto Location on OpenStreetMap"
 
     def createURL(self,lat,long):
-        url = "http://www.openstreetmap.org/?lat=%s&lon=%s&zoom=16" % (lat,long)
+        url = "http://www.openstreetmap.org/#map=17/%s/%s" % (lat,long)
         return url
 
 
@@ -27,7 +27,7 @@ class osmEditMap(cfAction):
         return "Goto Location on OpenStreetMap and start editing with iD"
 
     def createURL(self,lat,long):
-        url = "http://www.openstreetmap.org/edit?lat=%s&lon=%s&zoom=12" % (lat,long)
+        url = "http://www.openstreetmap.org/edit#map=17/%s/%s" % (lat,long)
         return url
 
 class osmEditMapJOSM(cfAction):
