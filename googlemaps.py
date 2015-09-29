@@ -11,5 +11,5 @@ class googleMap(cfAction):
         return "Goto Location on Google Maps"
 
     def createURL(self,lat,long):
-        url = "http://maps.google.com/maps?ll=%s,%s&z=14" % (lat,long)
+        url = "https://www.google.com/maps/@%s,%s,17z" % (lat,long)
         return url
