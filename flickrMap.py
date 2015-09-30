@@ -11,5 +11,5 @@ class flickrPics(cfAction):
         return "Show Flickr photos near point"
 
     def createURL(self,lat,long):
-        url = "http://www.flickr.com/map/?fLat=%s&fLon=%s&zl=5" % (lat,long)
+        url = "http://www.flickr.com/map/?fLat=%s&fLon=%s&zl=17" % (lat,long)
         return url

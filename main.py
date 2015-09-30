@@ -42,7 +42,7 @@ from qgis.gui import *
 # import resources
 
 from googlemaps import googleMap
-from geonames import gnExtended
+#from geonames import gnExtended
 from osm import osmViewMap,osmEditMap,osmEditMapJOSM 
 from flickrMap import flickrPics
 from geoHack import geoHack
@@ -59,7 +59,7 @@ class MainPlugin(object):
     self.menu=QMenu("Click-fu")
 
     self.googleMaps = googleMap(self.iface)
-    self.gnExtended = gnExtended(self.iface)
+    #self.gnExtended = gnExtended(self.iface)
     self.osmViewMap = osmViewMap(self.iface)
     self.osmEditMap = osmEditMap(self.iface)
     self.osmEditMapJOSM = osmEditMapJOSM(self.iface)
@@ -69,7 +69,7 @@ class MainPlugin(object):
     self.about = QAction("About Click-fu",self.iface.mainWindow())
     QObject.connect(self.about,SIGNAL("triggered()"),self.clickAbout)
 
-    self.menu.addActions([self.googleMaps, self.gnExtended, self.osmViewMap, self.osmEditMap, self.osmEditMapJOSM, self.flickr, self.geoHack])
+    self.menu.addActions([self.googleMaps, self.osmViewMap, self.osmEditMap, self.osmEditMapJOSM, self.flickr, self.geoHack])
     self.menu.addSeparator()
     self.menu.addAction(self.about)
     
